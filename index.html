@@ -6,26 +6,6 @@
     <title>Unity WebGL Player | Keppy_AR_Face</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-	<script>
-	window.onload = function() {
-            // Lock orientation to portrait mode
-            lockOrientation();
-        };
-
-        function lockOrientation() {
-            // Attempt to lock the screen orientation to portrait mode
-            if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock('portrait');
-            } else if (screen.lockOrientation) {
-                screen.lockOrientation('portrait');
-            } else if (screen.mozLockOrientation) {
-                screen.mozLockOrientation('portrait');
-            } else if (screen.msLockOrientation) {
-                screen.msLockOrientation('portrait');
-            }
-        }
-	</script>
-	
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -44,7 +24,6 @@
       </div>
     </div>
     <script>
-
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
